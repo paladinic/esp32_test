@@ -1,5 +1,26 @@
 # V2Q
-ESP32 Code
+
+## Circuit
+
+Button
+- One side of the button → GPIO 13
+- The other side of the button → GND.
+
+MOSFET (Low-Side Switching)
+- Drain → Atomizer coil negative.
+- Source → Battery negative (also ESP32 GND).
+- Gate → 220 Ω resistor → GPIO 27; plus 10 kΩ from Gate to Source.
+
+Coil
+- Coil positive → Battery +.
+- Coil negative → MOSFET Drain.
+
+Power
+- ESP32 powered via USB (5 V → onboard 3.3 V regulator).
+- Battery negative → ESP32 GND (common ground).
+
+
+## ESP32 Code
 ```
 /*
  * ESP32 BLE + Button Press Counter + Press Limit
