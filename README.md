@@ -24,7 +24,7 @@ Power
 
 
 ## ESP32 Code
-```
+```cpp
 /*
  * ESP32 BLE + Button Press Counter + Press Limit
  * ----------------------------------------------
