@@ -6,13 +6,13 @@
 ## Circuit
 
 Button
-- One side of the button → GPIO 13
+- One side of the button → BUTTON Pin on board 
 - The other side of the button → GND.
 
 MOSFET (Low-Side Switching)
 - Drain → Atomizer coil negative.
 - Source → Battery negative (also ESP32 GND).
-- Gate → 220 Ω resistor → GPIO 27; plus 10 kΩ from Gate to Source.
+- Gate → 220 Ω resistor → MOSFET Pin on board ; plus 10 kΩ from Gate to Source.
 
 Coil
 - Coil positive → Battery +.
